@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" placeholder="full name" required></textarea>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Select Subscription Plan</legend>
+            <input type="radio" name="subscription" id="plan">
+            <label for="plan">Pro</label>
+
+            <input type="radio" name="subscription" id="plan">
+            <label for="plan">Pro Max</label>
+
+            <input type="radio" name="subscription" id="plan" checked>
+            <label for="plan">Pro Max+</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Your Country</legend>
+            <input type="checkbox" name="country" id="india" checked>
+            <label for="india">India</label>
+
+            <input type="checkbox" name="country" id="china">
+            <label for="china">China</label>
+
+            <input type="checkbox" name="country" id="japan">
+            <label for="japan">Japan</label>
+        </fieldset>
+
+        <label for="drop-down">Select Your Country:</label>
+        <select name="country" id="drop-down">
+            <option value="01" selected>India</option>
+            <option value="02">China</option>
+            <option value="03">Japan</option>
+        </select>
+        <br>
+        <br>
+
+
+        <label for="volume">Volume:</label>
+        <input type="range" name="volume" id="volume" min="100" max="1000" value="500" step="50">
+        <br>
+        <br>
+
+        <button input="submit">Submit</button>
+        <button input="reset">Reset</button>
+    </form>
+</body>
+</html>
